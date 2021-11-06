@@ -392,15 +392,60 @@ textarea {
        url('../fonts/montserrat-v18-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/montserrat-v18-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 html{
 	box-sizing: border-box;
 }
 *, *::before, *::after{
 	box-sizing: inherit;
 }
-.item{
-	width: 200px;
-	height: 100px;
-	background-color: green;
-	padding: 20px;
+
+body{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-style: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #2E363E;
+}
+
+.wrapper{
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header__wrepper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.header__list{
+    display: flex;
+    flex-wrap: wrap;    
+} 
+
+.header__item{
+    margin-right: 41px;
+}
+.header__item:last-child{
+    margin-right: 0;
+}
+.header__link{
+    font-size: 14px;
+    line-height: 150%;
+    color: white;
+    text-decoration: none;
+}
+
+.header__link:hover, .header_link:focus, .header_link:active{
+    opacity: .75;    
 }
