@@ -393,6 +393,9 @@ textarea {
        url('../fonts/montserrat-v18-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* Fonts styles start (Шрифты) */
+
+
 
 html{
 	box-sizing: border-box;
@@ -410,10 +413,15 @@ body{
     color: #2E363E;
 }
 
+.img{
+    max-width: 100%;
+    height: auto;
+}
 
+/* обертка */
 .wrapper{
-    max-width: 1040px;
-    margin: 0 auto;
+    max-width: 1180px;
+    margin: 0 auto;    
 }
 
 .wrapper-full{
@@ -421,7 +429,7 @@ body{
     margin: 0 auto;
 }
 
-/* Header styles start (шапка)*/
+/* Header styles start (Шапка) */
 
 .header{
     background-color: #CFCECE;
@@ -479,7 +487,7 @@ body{
     opacity: .75;    
 }
 
-/* Header styles end*/
+/* Header styles end (Шапка) */
 
 .img{
     margin-top: 95px;
@@ -487,7 +495,7 @@ body{
     height: 738px;
 }
 
-/* Intro styles start*/
+/* Intro styles start (Вступление) */ 
 
 .intro{
     padding-top: 65px;
@@ -521,12 +529,13 @@ body{
 
 .searsh-form__info{
     margin-top: 30px;
-    margin-bottom: 65px;
+    margin-bottom: 100px;
     font-weight: 500;
     font-size: 18px;
 
 }
 
+/* Button 1 */
 .search-form__submit1{    
     padding: 30px 40px;
     margin-right: 20px;
@@ -535,22 +544,109 @@ body{
     border: 0;  
 }
 
-/* Не получается поменять цвет текста*/
+/* Button 2 */
 .search-form__submit2{    
     padding: 30px 60px;
-    color: #white;
+    color: #fff;
     background: #2E363E;
     border-radius: 8px;
     border: 0;
 }
 
 .search-form__submit1:hover, .search-form__submit1:focus, .search-form__submit1:active{
-    background: yellow;
+    background: #CFCECE;
 }
 
 .search-form__submit2:hover, .search-form__submit2:focus, .search-form__submit2:active{
-    background: green;
+    background: #CFCECE;
+    color: #2E363E;
 }
 
-/* Intro styles end*/
+/* Intro styles end (Вступление) */
 
+
+
+
+/* Catalog stiles start (Каталог товаров) */
+.catalog{
+    background-color: #CFCECE;
+}
+
+.catalog__wrap{
+    height: 800px;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.all__title{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: #2E363E;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.catalog__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    margin-bottom: 100px;
+}
+
+.catalog__card{
+    grid-column: span 1;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.catalog__card-pic{
+    max-width: 380px;
+    margin-bottom: 50px;
+}
+
+.catalog__card-mini{
+    border-radius: 8px;
+}
+
+.catalog__card-title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 12px;
+
+}
+
+.catalog__card-desc{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 50px;
+    max-width: 240px;
+    margin-left: 70px;
+}
+         
+/* Catalog styles end (Каталог товаров) */
+
+
+
+
+/* Halls styles start (Залы) */
+
+.holls_wrap{
+    max-width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.all__subtitle{
+    max-width: 600px;
+    font-size: 24px;
+    line-height: 34px;
+    color: #2E363E;
+    margin-bottom: 30px;
+}
+/* Halls styles end (Залы) */
