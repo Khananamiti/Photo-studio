@@ -393,6 +393,7 @@ textarea {
        url('../fonts/montserrat-v18-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+
 html{
 	box-sizing: border-box;
 }
@@ -401,7 +402,7 @@ html{
 }
 
 body{
-    font-family: 'Montserrat';
+    font-family: Montserrat;
     font-style: normal;
     font-style: 16px;
     line-height: 1.2;
@@ -409,23 +410,34 @@ body{
     color: #2E363E;
 }
 
+
 .wrapper{
     max-width: 1040px;
     margin: 0 auto;
 }
 
+.wrapper-full{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* Header styles start (шапка)*/
+
 .header{
-    background-color: #000;
+    background-color: #CFCECE;
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
 }
 
-.header__wrepper{
+.header__wrapper{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .header__list{
@@ -436,16 +448,109 @@ body{
 .header__item{
     margin-right: 41px;
 }
-.header__item:last-child{
-    margin-right: 0;
+.header__item:first-child{
+    margin-right: 145px;
 }
+.header__item:last-child{
+    margin-right: 200px;
+}
+
+.header__item2{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.header__item3{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: right;
+}
+
 .header__link{
     font-size: 14px;
     line-height: 150%;
-    color: white;
+    color: #2E363E;
     text-decoration: none;
 }
 
 .header__link:hover, .header_link:focus, .header_link:active{
     opacity: .75;    
 }
+
+/* Header styles end*/
+
+.img{
+    margin-top: 95px;
+    width: 1920px;
+    height: 738px;
+}
+
+/* Intro styles start*/
+
+.intro{
+    padding-top: 65px;
+    text-align: center;
+}
+
+/* Надзаголовок */
+.intro__overhead{
+    font-size: 11px;
+    line-height: 16px;
+    margin-bottom: 34px;
+}
+
+/* Заголовок */
+.intro__title{  
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #2E363E;
+    margin-bottom: 24px;
+}
+
+/* Подзаголовок */
+.intro__subtitle{
+    max-width: 600px;
+    font-size: 24px;
+    line-height: 34px;
+    color: #2E363E;
+    margin-bottom: 30px;
+}
+
+.searsh-form__info{
+    margin-top: 30px;
+    margin-bottom: 65px;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+
+.search-form__submit1{    
+    padding: 30px 40px;
+    margin-right: 20px;
+    background: #F2F6FA;
+    border-radius: 8px;
+    border: 0;  
+}
+
+/* Не получается поменять цвет текста*/
+.search-form__submit2{    
+    padding: 30px 60px;
+    color: #white;
+    background: #2E363E;
+    border-radius: 8px;
+    border: 0;
+}
+
+.search-form__submit1:hover, .search-form__submit1:focus, .search-form__submit1:active{
+    background: yellow;
+}
+
+.search-form__submit2:hover, .search-form__submit2:focus, .search-form__submit2:active{
+    background: green;
+}
+
+/* Intro styles end*/
+
