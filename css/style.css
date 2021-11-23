@@ -448,10 +448,21 @@ body{
     padding-bottom: 5px;
 }
 
+.header__capshion{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #1D1136;
+}
+
 .header__list{
     display: flex;
     flex-wrap: wrap;    
 } 
+
+.studio{
+    max-width: 30px;
+}
 
 .header__item{
     margin-right: 41px;
@@ -460,16 +471,17 @@ body{
     margin-right: 145px;
 }
 .header__item:last-child{
-    margin-right: 200px;
+    margin-right: 50px;
 }
 
-.header__item2{
+.header__link1{
     font-weight: bold;
     font-size: 18px;
     line-height: 27px;
+    color: #1D1136;
 }
 
-.header__item3{
+.header__link2{
     font-weight: normal;
     font-size: 12px;
     line-height: 18px;
@@ -636,7 +648,13 @@ body{
 
 /* Halls styles start (Залы) */
 
-.holls_wrap{
+.halls{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+}
+
+.all_wrap{
     max-width: 1180px;
     margin: 0 auto;
     text-align: center;
