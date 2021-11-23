@@ -421,7 +421,8 @@ body{
 /* обертка */
 .wrapper{
     max-width: 1180px;
-    margin: 0 auto;    
+    margin: 0 auto;
+    text-align: center;
 }
 
 .wrapper-full{
@@ -460,12 +461,10 @@ body{
     flex-wrap: wrap;    
 } 
 
-.studio{
-    max-width: 30px;
-}
-
 .header__item{
     margin-right: 41px;
+    font-size: 14px;    
+    line-height: 21px;
 }
 .header__item:first-child{
     margin-right: 145px;
@@ -474,14 +473,13 @@ body{
     margin-right: 50px;
 }
 
-.header__link1{
+.telephone{
     font-weight: bold;
     font-size: 18px;
     line-height: 27px;
-    color: #1D1136;
 }
 
-.header__link2{
+.time-work{
     font-weight: normal;
     font-size: 12px;
     line-height: 18px;
@@ -489,8 +487,6 @@ body{
 }
 
 .header__link{
-    font-size: 14px;
-    line-height: 150%;
     color: #2E363E;
     text-decoration: none;
 }
@@ -536,7 +532,6 @@ body{
     font-size: 24px;
     line-height: 34px;
     color: #2E363E;
-    margin-bottom: 30px;
 }
 
 .searsh-form__info{
@@ -598,10 +593,10 @@ body{
     margin: 0 auto;
     text-align: center;
     padding-top: 100px;
-    padding-bottom: 80px;
 }
 
 .catalog__cards{
+    padding-top: 80px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
@@ -651,20 +646,67 @@ body{
 .halls{
     max-width: 1920px;
     margin: 0 auto;
-}
-}
-
-.all_wrap{
-    max-width: 1180px;
-    margin: 0 auto;
-    text-align: center;
+    margin-bottom: 100px;
 }
 
 .all__subtitle{
-    max-width: 600px;
+    padding-top: 14px;
+    max-width: 1180px;
     font-size: 24px;
     line-height: 34px;
     color: #2E363E;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
+
+.halls__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 9px;
+}
+
+.indent{
+    margin-top: 80px;
+}
+
+.halls__card{
+    position: relative;
+    overflow: hidden;
+}
+
+.halls__card::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.halls__card:hover .halls__card-pic{
+    transform: scale(1.05);
+}
+
+.halls__card_size_lg{
+    grid-column: span 1;
+}
+
+.halls__card-pic{
+    width: 100%;
+    height: 444px;
+    object-fit: cover;    
+    transition: .15s all;
+}
+
+.halls__card-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+
 /* Halls styles end (Залы) */
