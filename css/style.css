@@ -542,7 +542,8 @@ body{
 }
 
 /* Button 1 */
-.search-form__submit1{    
+.search-form__submit1{  
+    width: 280px;  
     padding: 30px 40px;
     margin-right: 20px;
     background: #F2F6FA;
@@ -551,7 +552,8 @@ body{
 }
 
 /* Button 2 */
-.search-form__submit2{    
+.search-form__submit2{ 
+    width: 280px;    
     padding: 30px 60px;
     color: #fff;
     background: #2E363E;
@@ -856,39 +858,6 @@ body{
     width: inherit;
 }
 
-.wrapper1 .controls {
-    left: 50%;
-    margin-left: -98px;
-    position: absolute;
-}
-
-.wrapper1 label {
-    cursor: pointer;
-    display: inline-block;
-    height: 8px;
-    margin: 25px 12px 0 16px;
-    position: relative;
-    width: 8px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-}
-
-.wrapper1 label:after {
-    border: 2px solid #fff;
-    content: " ";
-    display: block;
-    height: 12px;
-    left: -4px;
-    position: absolute;
-    top: -4px;
-    width: 12px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-}
 
 .arrow_left{
     margin-right: 12px;
@@ -906,12 +875,35 @@ body{
 
 /*  Feedback card styles start (Карточка обратной связи) */
 
+.feedback{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.feedback_box {
+    padding-top: 70px;
+    width: 1180px;
+    height: 400px;
+    border: 8px solid #2E363E;
+    box-sizing: border-box;
+    border-radius: 8px;    
+}
+
+.left{
+    margin-left: 70px;
+}
+
+.personal_information{
+    margin-left: 150px;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 130%;
+    padding-bottom: 70px;
+}
 
 /*  Feedback card styles end (Карточка обратной связи) */
 
-.feedback{
-    padding-bottom: 100px;
-}
+
 
 /*  Footer styles start (Подвал) */
 
