@@ -572,7 +572,6 @@ body{
 
 
 
-
 /* Catalog stiles start (Каталог товаров) */
 
 .section-color{
@@ -713,8 +712,8 @@ body{
 /* Halls styles end (Залы) */
 
 
-/* Light and equipment styles start (Свет и оборудование) */
 
+/* Light and equipment styles start (Свет и оборудование) */
 
 .equipment__cards{
     padding-top: 80px;
@@ -745,7 +744,6 @@ body{
 
 /*  Rules styles start (Правила) */
 
-
 .rules{
 
 }
@@ -763,7 +761,6 @@ body{
     text-align: center;
     border-radius: 8px;
     align-items: center;
-
 }
 
 .rules__card-circles{
@@ -785,7 +782,6 @@ body{
   height: 45px;
   max-width: 45px;
   max-height: 45px;
-
 }
 
 .rules__card-circle__number{
@@ -805,7 +801,6 @@ body{
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-
 }
 
 /*  Rules styles end (Правила) */
@@ -814,6 +809,95 @@ body{
 
 /*  Reviews styles start (Отзывы) */
 
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.reviews{
+    padding-bottom: 100px;
+}
+
+.all__title-padding-bottom{
+    padding-bottom: 80px;
+}
+
+.wrapper1 {
+    width: 1180px;
+    height: 615px;
+    margin: auto 0;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.wrapper1 > input {
+    display: none;
+}
+
+.reviews__slider {
+    background-color: #fff;
+    height: inherit;
+    overflow: hidden;
+    position: relative;
+    width: inherit;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    -o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.slides{
+    height: inherit;
+    position: absolute;
+    width: inherit;
+}
+
+.wrapper1 .controls {
+    left: 50%;
+    margin-left: -98px;
+    position: absolute;
+}
+
+.wrapper1 label {
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 25px 12px 0 16px;
+    position: relative;
+    width: 8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.wrapper1 label:after {
+    border: 2px solid #fff;
+    content: " ";
+    display: block;
+    height: 12px;
+    left: -4px;
+    position: absolute;
+    top: -4px;
+    width: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.arrow_left{
+    margin-right: 12px;
+    text-decoration: none;
+}
+
+.arrow_right{
+    margin-left: 12px;
+}
 
 
 /*  Reviews styles end (Отзывы) */
@@ -825,6 +909,9 @@ body{
 
 /*  Feedback card styles end (Карточка обратной связи) */
 
+.feedback{
+    padding-bottom: 100px;
+}
 
 /*  Footer styles start (Подвал) */
 
@@ -843,7 +930,7 @@ body{
     margin-left: 200px;
 }
     
+
 /*  Footer styles end (Подвал) 
-align-items: center;
-    text-align: center;
+
 */
